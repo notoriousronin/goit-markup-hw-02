@@ -1,34 +1,98 @@
+:root {
+  --hero-text-color: #ffffff;
+  --primary-text-color: rgba(117, 117, 117, 1);
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --second-bcg-color: #2f303a;
+}
+
 body {
-  color: rgba(117, 117, 117, 1);
+  color: var(--primary-text-color);
   background-color: #e5e5e5;
   font-family: Roboto, sans-serif;
 }
 
+.list,
+.team-list {
+  list-style: none;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 500;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
+/* Header */
 .studio-header {
-  color: #212121;
+  color: var(--title-text-color);
 }
 
+/* Site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero-title {
+  color: var(--hero-text-color);
+  background-color: var(--second-bcg-color);
+}
+
+/* Features */
+.features-list .title,
+.title {
+  color: var(--title-text-color);
+}
+
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+}
+
+.button {
+  color: var(--hero-text-color);
+  background-color: var(--accent-color);
+}
+
+/* Portfolio */
+.tech-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 2;
+  color: var(--title-text-color);
+}
+
+.tech-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 1.8;
+  color: var(--title-text-color);
+}
+
+/* Footer */
 .studio-footer {
-  color: #ffffff;
+  color: var(--hero-text-color);
 }
-
-/* Цвет основного текста  #212121; */
-/* Вторичный цвет rgba(117, 117, 117, 1) */
-/* Номер #757575; */
-/* Акцент #2196F3 */
-/* Белый цвет(хэдэр) #FFFFFF */
-
-/* Футер rgba(255, 255, 255, 0.6); Адресс rgba(255, 255, 255, 1) */
-/* Бэкграунд-темный  #2F303A; */
-/* Бэкграунд-светлый #E5E5E5 */
-/* Бэкграунд-светлый-2 #F5F4FA */
