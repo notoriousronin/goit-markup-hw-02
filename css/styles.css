@@ -3,30 +3,17 @@
   --primary-text-color: rgba(117, 117, 117, 1);
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --second-bcg-color: #2f303a;
+  --header-bg-color: #ffffff;
+  --primary-bg-color: #e5e5e5;
+  --second-bg-color: #2f303a;
+  --third-bg-color: #f5f4fa;
 }
+
+/* General */
 
 body {
   color: var(--primary-text-color);
-  background-color: #e5e5e5;
   font-family: Roboto, sans-serif;
-}
-
-.list,
-.team-list {
-  list-style: none;
-}
-
-h1 {
-  font-weight: 900;
-}
-
-h2 {
-  font-weight: 700;
-}
-
-h3 {
-  font-weight: 500;
 }
 
 .logo {
@@ -36,7 +23,65 @@ h3 {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  text-decoration: none;
 }
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+}
+
+.header {
+  color: var(--header-bg-color);
+}
+
+.header-contacts {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.footer-contacts {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer-contacts:hover,
+.footer-contacts:focus,
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--accent-color);
+}
+
+.list,
+.team-list,
+.features-list,
+.footer-list {
+  list-style: none;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  color: var(--title-text-color);
+}
+
+/* Studia */
 
 /* Header */
 .studio-header {
@@ -46,6 +91,10 @@ h3 {
 /* Site nav */
 .site-nav .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -53,10 +102,17 @@ h3 {
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 /* Hero */
+.hero {
+  background-color: var(--second-bg-color);
+}
+
 .hero-title {
   color: var(--hero-text-color);
-  background-color: var(--second-bcg-color);
 }
 
 /* Features */
@@ -65,34 +121,113 @@ h3 {
   color: var(--title-text-color);
 }
 
+.title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.title-features {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+/* Pictures */
+
 /* Section */
 .section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.button {
+.team-section {
+  background-color: var(--third-bg-color);
+}
+
+/* Studio-Button */
+
+.button.primary {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
   color: var(--hero-text-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* Portfolio */
+
+.portfolio-main {
+  background-color: var(--header-bg-color);
+}
+
+.button {
+  font-family: inherit;
+  color: var(--title-text-color);
+  background-color: var(--third-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
 .tech-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 2;
+  line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 
 .tech-text {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 1.8;
-  color: var(--title-text-color);
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.pictures-list {
+  text-decoration: none;
 }
 
 /* Footer */
 .studio-footer {
   color: var(--hero-text-color);
+}
+
+.footer {
+  background-color: var(--second-bg-color);
+}
+
+.location {
+  color: var(--header-bg-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
